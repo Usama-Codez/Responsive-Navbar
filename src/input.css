@@ -62,7 +62,7 @@ body {
 /* Animated blue indicator */
 .nav-indicator {
   position: absolute;
-  bottom: -13px;
+  bottom: -15px;
   height: 5px;
   background: #007aff;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
