@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/* Custom styles */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Glassy card effect for mobile menu */
+.glass-card {
+  background: rgba(49, 49, 49, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-button {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(0, 122, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Smooth slide animation */
+.slide-enter {
+  animation: slideDown 0.4s ease-out forwards;
+}
+
+.slide-exit {
+  animation: slideUp 0.3s ease-in forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* Animated blue indicator */
+.nav-indicator {
+  position: absolute;
+  bottom: -13px;
+  height: 5px;
+  background: #007aff;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+}
