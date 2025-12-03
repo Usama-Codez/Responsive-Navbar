@@ -69,3 +69,37 @@ body {
   border-radius: 2px 2px 0 0;
   z-index: 10;
 }
+
+/* Navigation link styles */
+.nav-link {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(170, 170, 170, 0.87); /* #AAAAAA at 87% opacity for inactive */
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #aaaaaa; /* Full opacity on hover */
+}
+
+.nav-link.active {
+  color: #aaaaaa; /* Full opacity for active tab */
+}
+
+/* Sign In button text styles */
+.signin-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(170, 170, 170, 0.87); /* #AAAAAA at 87% opacity */
+  transition: color 0.3s ease;
+}
+
+.signin-text:hover {
+  color: #aaaaaa; /* Full opacity on hover */
+}
